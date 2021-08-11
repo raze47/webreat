@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      <title> WebReat </title>
+      <link href="Resources/map-marker-icon.png" rel="icon" type="x-icon">
+      <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+      <!--Header-->
+      <header class="header"> 
+        <div class="container">
+            <nav class="tabs">
+                <img src="Resources/WebReat.png" alt="Logo" width="150"/>
+                <ul>
+                    <li><a href="#">Back</a></span></li>
+                    <li><a href="#">Sign out</a></span></li>
+
+                </ul>
+            </nav>
+        </div>
+       
+      </header>
+
+      <!--Body-->
+    <section>
+      <form method="post" action="" enctype="multipart/form-data">
+        <div class="profile-settings-container">
+    
+              <div class="profile-settings-container-left-column">
+                <div class="profile-settings-container-left-column-venturePicture">
+
+                    <img src="retreat_pfp/placeholder-retreat.jpg" width="150px" height="150px">
+                    <br>
+                    <input type="file" name="retreat_picture" id="retreat_picture">
+                
+                </div>
+                <div class="profile-settings-container-left-column-mapSnippet">
+                  <label for="owner_name_reg">Owner name</label>
+                  <input type="text" name="owner_name_reg" id="owner_name_reg" ><br>
+
+                  <label for="owner_retreatName_reg">Retreat Name</label>
+                  <input type="text" name="owner_retreatName_reg" id="owner_retreatName_reg" ><br>
+
+                  <label for="owner_password_reg">Password</label>
+                  <input type="password" name="owner_password_reg" id="owner_password_reg"><br>
+
+                  <label for="confirm_password_reg">Confirm Password</label>
+                  <input type="password" name="owner_confirm_password_reg" id="owner_confirm_password_reg"><br>
+
+                </div>
+              </div>
+              <div class="profile-settings-container-right-column">
+                  <div class="profile-settings-container-save">
+                    <input type="submit" id="profile_settings_submit" name = "profile_settings_submit" id ="profile_settings_submit" value="Save Changes">
+                        
+                  </div>
+
+                  <div class="profile-settings-container-description">
+                    <textarea id="profile_settings_description" name="profile_settings_description"  cols="70" rows="50">
+                      </textarea>
+
+                  </div>
+
+                
+              </div>
+      
+        </div>
+    </form>
+    </section>
+
+    </body>
+    <footer>
+         <!--Footer-->
+         <center>
+    
+            <div class="copyright">
+                <img src="Resources/WebReat1.png" alt="Logo" width="140"/>
+                <p>
+                    <br>
+                    Copyright © 2021 WebReat.com™. All rights reserved.
+                    <br>
+                    Polytechnic University of the Philippines, College of Computer and Information Science
+                </p> 
+            </div>
+         </center>
+    </footer>
+</html>

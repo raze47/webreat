@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title> WebReat </title>
+        <link href="Resources/map-marker-icon.png" rel="icon" type="x-icon">
+        <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      </head>
+
+    <body>
+     <!--Header-->
+     <section class="header"> 
+        <nav>
+            <a href="index.php" id="logo"><img src="Resources/WebReat.png" alt="Logo" width="150"></a>
+            <div class="navs" id="navs">
+                <i class="fa fa-window-close-o" onclick="hideMenu()"></i>					
+                <ul>
+                    <li><a href="OwnerProfile.php" class="navbtns">Home</a></span></li>
+                    <li><a href="OwnerProfileSettings.php" class="navbtns">Settings</a></span></li>
+                    <li><a href="Property_manager.php?owner_logout" class="navbtns">Sign out</a></span></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+     
+    <!--JavaScript for Menu-->
+    <script>
+
+        var navs = document.getElementById("navs");
+
+        function showMenu(){
+            navs.style.right = "0";
+        }
+        function hideMenu(){
+            navs.style.right = "-200px";
+        }
+
+    </script>
+        <div class="tabs-container">
+          <nav>
+              <ul>      
+                <li>
+                    <a href="OwnerProperties.html"> Properties</a></span>
+                </li>
+                <li>
+                    <a href="OwnerReservations.php" class="owner-tabs-btns">Reservations</a></span>
+                </li>
+                <li class="selected">
+                    <a href="" class="owner-tabs-btns">Reviews</a></span>
+                </li>
+                <li>
+                  <a href="" class="owner-tabs-btns">Finances</a></span>
+                </li>
+              </ul>
+          </nav>
+      </div>
+       
+      </header>
+
+      <!--Body-->
+    <section class="container1">
+      <h1>Some reviews of your place</h1>
+      <div class="reviews_container">
+
+      <div class="eventPlace-upper-container">
+        <div class="eventPlace-upper-container-left-column">
+            <h3>10.0 Very Good</h3>   
+            <h5>Anonymous</h5>
+            <h5>Stayed for one night in July 10 2021</h5><br><br><br><br> 
+            <a href='#'>Delete</a>                          
+        </div> 
+        <div class="eventPlace-upper-container-right-column">
+            <h2>"Great Stay”</h2>   
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora debitis distinctio reprehenderit voluptate. Animi, harum? Adipisci neque sed tempora dolor architecto, ab modi, quaerat minima, iste sunt maiores rerum explicabo!</p> 
+        </div>
+      </div><br>
+
+      <div class="eventPlace-upper-container">
+        <div class="eventPlace-upper-container-left-column">
+            <h3>10.0 Very Good</h3>   
+            <h5>Anonymous</h5>
+            <h5>Stayed for one night in July 10 2021</h5><br><br><br><br> 
+            <a href='#'>Delete</a>                          
+        </div> 
+        <div class="eventPlace-upper-container-right-column">
+            <h2>"Great Stay”</h2>   
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora debitis distinctio reprehenderit voluptate. Animi, harum? Adipisci neque sed tempora dolor architecto, ab modi, quaerat minima, iste sunt maiores rerum explicabo!</p> 
+        </div>
+      </div><br>
+
+      <div class="eventPlace-upper-container">
+        <div class="eventPlace-upper-container-left-column">
+            <h3>10.0 Very Good</h3>   
+            <h5>Anonymous</h5>
+            <h5>Stayed for one night in July 10 2021</h5><br><br><br><br> 
+            <a href='#'>Delete</a>                          
+        </div> 
+        <div class="eventPlace-upper-container-right-column">
+            <h2>"Great Stay”</h2>   
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora debitis distinctio reprehenderit voluptate. Animi, harum? Adipisci neque sed tempora dolor architecto, ab modi, quaerat minima, iste sunt maiores rerum explicabo!</p> 
+        </div>
+      </div><br>
+
+      
+    </div>
+      
+
+
+
+      
+
+    </section>
+
+    </body>
+    <footer>
+         <!--Footer-->
+         <center>
+            <div class="copyright">
+                <img src="Resources/WebReat1.png" alt="Logo" width="140"/>
+                <p>
+                    <br>
+                    Copyright © 2021 WebReat.com™. All rights reserved.
+                    <br>
+                    Polytechnic University of the Philippines, College of Computer and Information Science
+                </p> 
+            </div>
+         </center>
+    </footer>
+</html>

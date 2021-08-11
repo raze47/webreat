@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      <title> WebReat </title>
+      <link href="Resources/map-marker-icon.png" rel="icon" type="x-icon">
+      <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+      <!--Header-->
+      <header class="header"> 
+        <div class="container">
+            <nav class="tabs">
+                <img src="Resources/WebReat.png" alt="Logo" width="150"/>
+                <ul>
+                    <li><a href="OwnerProfile.php">Profile</a></span></li>
+                    <li><a href="#">Sign out</a></span></li>
+
+                </ul>
+            </nav>
+        </div>
+       
+      </header>
+
+      <!--Body-->
+    <section>
+        <div class="properties-add-container">
+
+            <div class="properties-add-center">
+               <form action="" method="post">
+
+                <div class="properties-add-center-propertyPicture">
+
+                    <img src="retreat_pfp/placeholder-retreat.jpg" width="150px" height="150px">
+                    <br>
+                    <input type="file" name="property_picture[]" id="property_picture">
+                
+                </div>
+     
+                <label for="property_add_name">Property name</label>
+                <input type="text" name="property_add_name" id="property_add_name" ><br>
+
+
+                <div class="properties-add-center-description">
+        
+                    <textarea id="properties_add_description" name="properties_add_description" value="" cols="70" rows="50"></textarea>
+            
+                </div>
+
+                <input type="submit" id="properties_add" name = "properties_add" id ="properties_add" value="Add Property">
+               </form>     
+
+            </div>
+  
+           
+        </div>
+
+
+    </section>
+
+    </body>
+    <footer>
+         <!--Footer-->
+         <center>
+    
+            <div class="copyright">
+                <img src="Resources/WebReat1.png" alt="Logo" width="140"/>
+                <p>
+                    <br>
+                    Copyright © 2021 WebReat.com™. All rights reserved.
+                    <br>
+                    Polytechnic University of the Philippines, College of Computer and Information Science
+                </p> 
+            </div>
+         </center>
+    </footer>
+</html>

@@ -1,0 +1,135 @@
+<?php include('Property_manager.php') ?>
+<?php include('connection.php')?>
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title> WebReat </title>
+        <link href="Resources/map-marker-icon.png" rel="icon" type="x-icon">
+        <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      </head>
+
+    <body>
+     <!--Header-->
+     <section class="header"> 
+        <nav>
+            <a href="index.php" id="logo"><img src="Resources/WebReat.png" alt="Logo" width="150"></a>
+            <div class="navs" id="navs">
+                <i class="fa fa-window-close-o" onclick="hideMenu()"></i>					
+                <ul>
+                    <li><a href="OwnerProfile.php" class="navbtns">Home</a></span></li>
+                    <li><a href="OwnerProfileSettings.php" class="navbtns">Settings</a></span></li>
+                    <li><a href="Property_manager.php?owner_logout" class="navbtns">Sign out</a></span></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+     
+    <!--JavaScript for Menu-->
+    <script>
+
+        var navs = document.getElementById("navs");
+
+        function showMenu(){
+            navs.style.right = "0";
+        }
+        function hideMenu(){
+            navs.style.right = "-200px";
+        }
+
+    </script>
+        <div class="tabs-container">
+          <nav>
+              <ul>      
+                <li>
+                    <a href="OwnerProperties.html"> Properties</a></span>
+                </li>
+                <li>
+                    <a href="OwnerReservations.php" class="owner-tabs-btns">Reservations</a></span>
+                </li>
+                <li>
+                    <a href="OwnerReviews.php" class="owner-tabs-btns">Reviews</a></span>
+                </li>
+                <li class="selected">
+                  <a href="OwnerFinances.php" class="owner-tabs-btns">Finances</a></span>
+                </li>
+              </ul>
+          </nav>
+      </div>
+       
+      </header>
+
+    <!--Body-->
+    <section class="container1">
+
+     <div class="monthly_revenue_container">
+        <div class="revenue">
+          <h1>Your revenue for this month</h1>
+          <h2>Php 10,400</h2>
+        </div>
+        <div class="graphics_revenue">
+            <h1>insert infographics here</h1>
+        </div>
+     </div>
+
+     <div class="archives_container">
+       <h1>Archives</h1><hr>
+
+       <div class="scroll_archives">
+        <center>
+        <table class="archives_table_content">
+          <thead>
+            <tr>
+              <th>Reference No.</td>
+              <th>Property</th>
+              <th>Name</th>
+              <th>Days</th>
+              <th>Price</th>
+              <th>Delete?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>hehe</td>
+              <td>hehe</td>
+              <td>hehe</td>
+              <td>hehe</td>
+              <td>hehe</td>
+              <td>hehe</td>
+            </tr>
+            <tr>
+              <td>hehe</td>
+              <td>hehe</td>
+              <td>hehe</td>
+              <td>hehe</td>
+              <td>hehe</td>
+              <td>hehe</td>
+            </tr>
+          </tbody>
+          </table>
+        </center>
+       </div>
+      
+     </div>
+
+    </section>
+
+    </body>
+    <footer>
+         <!--Footer-->
+         <center>
+            <div class="copyright">
+                <img src="Resources/WebReat1.png" alt="Logo" width="140"/>
+                <p>
+                    <br>
+                    Copyright © 2021 WebReat.com™. All rights reserved.
+                    <br>
+                    Polytechnic University of the Philippines, College of Computer and Information Science
+                </p> 
+            </div>
+         </center>
+    </footer>
+</html>
